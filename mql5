@@ -1,0 +1,69 @@
+
+// +------------------------------------------------------------------+
+// |                                              Doteki Heikin Ashi |
+// |                                       Developed by Forex Robot Easy Team |
+// |                                                  Site: forexroboteasy.com |
+// +------------------------------------------------------------------+
+#property copyright 'Forex Robot Easy Team'
+#property link      'forexroboteasy.com'
+
+//+------------------------------------------------------------------+
+//| Customizable parameters                                          |
+//+------------------------------------------------------------------+
+extern int emaPeriod = 10; // Period value for EMA
+extern bool useHighAsTrailingStop = true; // Use high value for trailing stop-loss
+extern bool useAlmostZeroLagEMA = true; // Use Almost Zero-Lag EMA
+
+//+------------------------------------------------------------------+
+//| Indicator initialization function                                 |
+//+------------------------------------------------------------------+
+int OnInit()
+{
+   // Initialize indicator logic here
+
+   return(INIT_SUCCEEDED);
+}
+
+//+------------------------------------------------------------------+
+//| Custom indicator iteration function                              |
+//+------------------------------------------------------------------+
+int OnCalculate(const int rates_total,
+                const int prev_calculated,
+                const datetime& time[],
+                const double& open[],
+                const double& high[],
+                const double& low[],
+                const double& close[],
+                const long& tick_volume[],
+                const long& volume[],
+                const int& spread[])
+{
+    // Calculate indicator logic here
+
+    return(rates_total);
+}
+
+//+------------------------------------------------------------------+
+//| Trading functions                                                |
+//+------------------------------------------------------------------+
+void OpenBuyOrder()
+{
+    // Place buy order logic here
+}
+
+void OpenSellOrder()
+{
+    // Place sell order logic here
+}
+
+//+------------------------------------------------------------------+
+//| Customizable chart options                                       |
+//+------------------------------------------------------------------+
+void SetChartOptions()
+{
+    // Set chart options logic here
+}
+
+//+------------------------------------------------------------------+
+//| End of program                                                   |
+//+------------------------------------------------------------------+
